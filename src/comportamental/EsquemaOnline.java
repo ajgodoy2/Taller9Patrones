@@ -5,10 +5,15 @@
  */
 package comportamental;
 
+import creacional.ComprobanteElectronico;
+
 /**
  *
  * @author CltControl
  */
-public class EsquemaOnline {
+public class EsquemaOnline implements Esquema{
     
+     public void autorizar(ComprobanteElectronico comprobante){
+       
+    }
 }

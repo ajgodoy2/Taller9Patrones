@@ -5,10 +5,27 @@
  */
 package estructural;
 
+import creacional.ComprobanteElectronico;
+import java.util.List;
+
 /**
  *
  * @author CltControl
  */
-public class DetalleDecorator {
+public class DetalleDecorator extends ComprobanteElectronico {
+
+    public DetalleDecorator(ComprobanteElectronico comprobante){}
+    
+    public DetalleDecorator(){}
+    
+    @Override
+    public List<String> getDetallesEmisor(){
+        return detallesEmisor;
+    }
+    
+    public ComprobanteElectronico getComprobante(){
+        return null;
+    }
+    
     
 }

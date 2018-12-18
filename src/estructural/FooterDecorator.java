@@ -5,10 +5,23 @@
  */
 package estructural;
 
+import creacional.ComprobanteElectronico;
+import java.util.List;
+
 /**
  *
  * @author CltControl
  */
-public class FooterDecorator {
+public class FooterDecorator extends DetalleDecorator{
     
+    public FooterDecorator(ComprobanteElectronico comprobante){}
+    
+    public FooterDecorator(){}
+    
+    @Override
+    public List<String> getDetallesEmisor(){
+        return detallesEmisor;
+    }
+    
+ 
 }
