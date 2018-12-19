@@ -12,16 +12,17 @@ import java.util.List;
  *
  * @author CltControl
  */
-public class FooterDecorator extends DetalleDecorator{
-    
-    public FooterDecorator(ComprobanteElectronico comprobante){}
-    
-    public FooterDecorator(){}
-    
+public class FooterDecorator extends DetalleDecorator {
+
+    public FooterDecorator(ComprobanteElectronico comprobante) {
+    }
+
+    public FooterDecorator() {
+    }
+
     @Override
-    public List<String> getDetallesEmisor(){
+    public List<String> getDetallesEmisor() {
         return detallesEmisor;
     }
-    
- 
+
 }

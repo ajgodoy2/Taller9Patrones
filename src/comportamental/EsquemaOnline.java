@@ -6,6 +6,7 @@
 package comportamental;
 
 import creacional.ComprobanteElectronico;
+import java.util.Random;
 
 /**
  *
@@ -13,7 +14,11 @@ import creacional.ComprobanteElectronico;
  */
 public class EsquemaOnline implements Esquema{
     
+     @Override
      public void autorizar(ComprobanteElectronico comprobante){
-       
+     Random rand = new Random();
+     int n = rand.nextInt(10000000) + 1;
+     String codigo= Integer.toString(n);
+     comprobante.setClaveAcceso(codigo);
     }
 }

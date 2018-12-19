@@ -9,7 +9,7 @@ package creacional;
  *
  * @author Patricio
  */
-public class ComprobantesFactory {
+public class ComprobantesFactory extends ComprobantesCreator{
     
     public ComprobanteElectronico getComprobante(String tipoComprobante){
       if(tipoComprobante == null){

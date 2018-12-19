@@ -14,18 +14,19 @@ import java.util.List;
  */
 public class DetalleDecorator extends ComprobanteElectronico {
 
-    public DetalleDecorator(ComprobanteElectronico comprobante){}
-    
-    public DetalleDecorator(){}
-    
+    public DetalleDecorator(ComprobanteElectronico comprobante) {
+    }
+
+    public DetalleDecorator() {
+    }
+
     @Override
-    public List<String> getDetallesEmisor(){
+    public List<String> getDetallesEmisor() {
         return detallesEmisor;
     }
-    
-    public ComprobanteElectronico getComprobante(){
+
+    public ComprobanteElectronico getComprobante() {
         return null;
     }
-    
-    
+
 }
