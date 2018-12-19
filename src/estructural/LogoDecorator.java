@@ -15,6 +15,7 @@ import java.util.List;
 public class LogoDecorator extends DetalleDecorator {
 
     public LogoDecorator(ComprobanteElectronico comprobante) {
+        super(comprobante);
     }
 
     public LogoDecorator() {
@@ -22,7 +23,9 @@ public class LogoDecorator extends DetalleDecorator {
 
     @Override
     public List<String> getDetallesEmisor() {
-        return detallesEmisor;
+        String logo = "Se agrego un logo";
+        this.comprobante.getDetallesEmisor().add(logo);
+        return this.comprobante.getDetallesEmisor();
     }
 
 }

@@ -13,8 +13,10 @@ import java.util.List;
  * @author CltControl
  */
 public class DetalleDecorator extends ComprobanteElectronico {
+    protected ComprobanteElectronico comprobante;
 
     public DetalleDecorator(ComprobanteElectronico comprobante) {
+        this.comprobante=comprobante;
     }
 
     public DetalleDecorator() {

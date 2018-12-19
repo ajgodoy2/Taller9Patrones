@@ -15,6 +15,7 @@ import java.util.List;
 public class FooterDecorator extends DetalleDecorator {
 
     public FooterDecorator(ComprobanteElectronico comprobante) {
+        super(comprobante);
     }
 
     public FooterDecorator() {
@@ -22,7 +23,9 @@ public class FooterDecorator extends DetalleDecorator {
 
     @Override
     public List<String> getDetallesEmisor() {
-        return detallesEmisor;
+        String footer = "Se agrego un lema";
+        this.comprobante.getDetallesEmisor().add(footer);
+        return this.comprobante.getDetallesEmisor();
     }
 
 }

@@ -19,6 +19,6 @@ public class EsquemaOnline implements Esquema{
      Random rand = new Random();
      int n = rand.nextInt(10000000) + 1;
      String codigo= Integer.toString(n);
-     comprobante.setClaveAcceso(codigo);
+     comprobante.setNumeroAutorizacion(codigo);
     }
 }
