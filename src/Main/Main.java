@@ -24,7 +24,7 @@ public class Main {
         //Factura
         ComprobanteElectronico factura = manager.getComprobante("factura");
 
-        factura.setClaveAcceso("mayonesa123");
+        factura.setClaveAcceso("123");
         factura.setCodigo(12324);
         factura.setFecha(LocalDate.now());
         factura.setNombreCliente("Luiggi");
@@ -40,7 +40,7 @@ public class Main {
         ComprobanteElectronico credito = (NotaCredito)manager.getComprobante("notacredito");
         credito.setNumeroAutorizacion("1997");
         credito.setFecha(LocalDate.now());
-        credito.setClaveAcceso("SalsadeTomate");
+        credito.setClaveAcceso("1056743");
         credito.setCodigo(1110001);
         credito.setNombreCliente("Steven");
     
@@ -53,7 +53,7 @@ public class Main {
         //Guia de remision
         ComprobanteElectronico remision = (GuiaRemision)manager.getComprobante("guiaremision");
         remision.setCodigo(243546);
-        remision.setClaveAcceso("barcelona123");
+        remision.setClaveAcceso("5632123");
         remision.setNombreCliente("Josue Lasso");
         remision.setNumeroAutorizacion("2018");
         remision.setFecha(LocalDate.now());
